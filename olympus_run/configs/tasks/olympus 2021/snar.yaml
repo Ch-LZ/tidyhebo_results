@@ -1,0 +1,22 @@
+task_name: snar
+less_is_better: true
+on_simplex: false
+params:
+- name: residence_time
+  type: continuous
+  low: 0.5
+  high: 2.0
+- name: ratio
+  type: continuous
+  low: 1.0
+  high: 5.0
+- name: concentration
+  type: continuous
+  low: 0.1
+  high: 0.5
+- name: temperature
+  type: continuous
+  low: 60.0
+  high: 140.0
+y_p_star: 0.24122212996368542
+y_p_w: 4.445027590118409

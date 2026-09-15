@@ -1,0 +1,22 @@
+task_name: alkox
+less_is_better: false
+on_simplex: false
+params:
+- name: catalase
+  type: continuous
+  low: 0.05
+  high: 1.0
+- name: peroxidase
+  type: continuous
+  low: 0.5
+  high: 10.0
+- name: alcohol_oxidase
+  type: continuous
+  low: 2.0
+  high: 8.0
+- name: ph
+  type: continuous
+  low: 6.0
+  high: 8.0
+y_p_star: 137.7049049899668
+y_p_w: -7.988519390031499

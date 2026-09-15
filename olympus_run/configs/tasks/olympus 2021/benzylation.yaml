@@ -1,0 +1,22 @@
+task_name: benzylation
+less_is_better: true
+on_simplex: false
+params:
+- name: flow_rate
+  type: continuous
+  low: 0.2
+  high: 0.4
+- name: ratio
+  type: continuous
+  low: 1.0
+  high: 5.0
+- name: solvent
+  type: continuous
+  low: 0.5
+  high: 1.0
+- name: temperature
+  type: continuous
+  low: 110.0
+  high: 150.0
+y_p_star: 2.2661911135089805
+y_p_w: 17.694440791524688

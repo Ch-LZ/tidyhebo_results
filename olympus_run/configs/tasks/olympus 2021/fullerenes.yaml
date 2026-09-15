@@ -1,0 +1,18 @@
+task_name: fullerenes
+less_is_better: false
+on_simplex: false
+params:
+- name: reaction_time
+  type: continuous
+  low: 3.0
+  high: 31.0
+- name: sultine
+  type: continuous
+  low: 1.5
+  high: 6.0
+- name: temperature
+  type: continuous
+  low: 100.0
+  high: 150.0
+y_p_star: 0.9590694802897713
+y_p_w: 0.346106073207598

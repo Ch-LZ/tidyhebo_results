@@ -1,0 +1,18 @@
+task_name: colors_n9
+less_is_better: true
+on_simplex: false
+params:
+- name: red
+  type: continuous
+  low: 0.0
+  high: 1.0
+- name: green
+  type: continuous
+  low: 0.0
+  high: 1.0
+- name: blue
+  type: continuous
+  low: 0.0
+  high: 1.0
+y_p_star: 0.05937561114623373
+y_p_w: 0.6417334914721279

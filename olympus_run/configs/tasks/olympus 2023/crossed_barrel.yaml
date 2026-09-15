@@ -1,0 +1,22 @@
+task_name: barrel
+less_is_better: false
+on_simplex: false
+params:
+- name: n
+  type: continuous
+  low: 6.0
+  high: 12.0
+- name: theta
+  type: continuous
+  low: 0.0
+  high: 200.0
+- name: r
+  type: continuous
+  low: 1.5
+  high: 2.5
+- name: t
+  type: continuous
+  low: 0.7
+  high: 1.4
+y_p_star: 54.780801294152354
+y_p_w: 0.0

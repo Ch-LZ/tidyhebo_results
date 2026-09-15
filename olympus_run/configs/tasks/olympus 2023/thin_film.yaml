@@ -1,0 +1,18 @@
+task_name: thin_films
+less_is_better: true
+on_simplex: true
+params:
+- name: CsPbI_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: FAPbI_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: MAPbI_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+y_p_star: 66302.03713692715
+y_p_w: 1654719.3082870904

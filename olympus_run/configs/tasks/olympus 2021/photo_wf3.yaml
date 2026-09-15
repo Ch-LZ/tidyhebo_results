@@ -1,0 +1,22 @@
+task_name: photo_wf3
+less_is_better: true
+on_simplex: true
+params:
+- name: mat_1_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: mat_2_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: mat_3_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: mat_4_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+y_p_star: 0.0
+y_p_w: 0.6429202878879375

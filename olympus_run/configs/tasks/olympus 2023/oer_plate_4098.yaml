@@ -1,0 +1,30 @@
+task_name: oer_plate_4098
+less_is_better: true
+on_simplex: true
+params:
+- name: sn_load_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: sb_load_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: co_load_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: ca_load_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: ni_load_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+- name: mn_load_aux
+  type: continuous
+  low: -2.0
+  high: 2.0
+y_p_star: 0.2742433019239248
+y_p_w: 0.6290591995681086
