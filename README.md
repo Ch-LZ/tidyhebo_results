@@ -31,10 +31,11 @@ The notebooks contain the exact commands for regenerating raw optimization trace
 1. **Ackley and Hartmann:** [`01_synthetic_reproducibility.ipynb`](01_synthetic_reproducibility.ipynb)
 2. **Olympus, sequential optimization:** [`02_olympus_sequential_reproducibility.ipynb`](02_olympus_sequential_reproducibility.ipynb)
 3. **Olympus, adaptive batching:** [`03_olympus_adaptive_batching_reproducibility.ipynb`](03_olympus_adaptive_batching_reproducibility.ipynb)
-
-An additional Needle-in-a-Haystack analysis is documented in [`04_needle_in_a_haystack/ZoMBI_reproducibility.ipynb`](04_needle_in_a_haystack/ZoMBI_reproducibility.ipynb).
+4. An additional Needle-in-a-Haystack analysis is documented in [`04_needle_in_a_haystack/ZoMBI_reproducibility.ipynb`](04_needle_in_a_haystack/ZoMBI_reproducibility.ipynb).
 
 For a quick check without rerunning the optimizers, open the notebooks from the repository root in the `tidyhebo` environment and execute all cells. The archived matrices contain 30 runs × 100 evaluations for every manuscript benchmark setting.
+
+For `bayesmark` results reproduction see `bayesmark_reproducibility/README.md`
 
 ## Repository structure
 
@@ -47,8 +48,8 @@ For a quick check without rerunning the optimizers, open the notebooks from the 
 - `reproducibility/metrics.py` — **single source of truth** for median nAUC, IQR nAUC, and CVaR nAUC.
 - `reproducibility/plotting.py` and `reproducibility/adaptive_batching.py` — shared plotting/analysis helpers used by the notebooks.
 - `venvs/` — Conda environment specifications.
-
-`reproducibility/update_olympus_extrema.py` is a maintenance utility for recomputing task extrema; it is not required for reproducing the archived manuscript results.
+- `reproducibility/update_olympus_extrema.py` is a maintenance utility for recomputing task extrema; it is not required for reproducing the archived manuscript results.
+- `bayesmark_reproducibility` — source code and instructions on how to reproduce bayesmark results
 
 ## Tests
 

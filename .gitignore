@@ -9,3 +9,15 @@ __dev_/
 *.tar.gz
 TODO.md
 sandbox
+
+# bayesmark
+results/
+logs/
+.state/
+smoke_results/
+smoke_logs/
+.smoke_state/
+.runner.json
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
