@@ -1,6 +1,0 @@
-{
-  "HEBO": ["hebo_vanilla.py", {}],
-  "tidyHEBO": ["tidyhebo_hpo.py", {}],
-  "LogEI": ["qlogei.py", {}],
-  "optuna": ["optuna_hpo.py", {}]
-}

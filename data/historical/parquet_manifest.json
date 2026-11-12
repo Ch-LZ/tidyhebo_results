@@ -1,0 +1,949 @@
+{
+  "bayesmark": {
+    "actual_seeds": [
+      249467210,
+      415968276,
+      423734972,
+      429389014,
+      669991378,
+      670094950,
+      787846414,
+      996406378,
+      1201263687,
+      1273642419,
+      1572714583,
+      1608637542,
+      1914837113,
+      1935803228,
+      1972458954
+    ],
+    "by_q": {
+      "8": 9720
+    },
+    "completed": 9720,
+    "planned_seeds": [
+      1608637542,
+      1273642419,
+      1935803228,
+      787846414,
+      996406378,
+      1201263687,
+      423734972,
+      415968276,
+      670094950,
+      1914837113,
+      669991378,
+      429389014,
+      249467210,
+      1972458954,
+      1572714583
+    ],
+    "reference_runs": 9720,
+    "runs_with_initial_x": 9720,
+    "skipped": {},
+    "source": "results\\bayesmark_q8_full108",
+    "tasks": [
+      "boston_ada_mae",
+      "boston_ada_mse",
+      "boston_dt_mae",
+      "boston_dt_mse",
+      "boston_knn_mae",
+      "boston_knn_mse",
+      "boston_lasso_mae",
+      "boston_lasso_mse",
+      "boston_linear_mae",
+      "boston_linear_mse",
+      "boston_mlp_adam_mae",
+      "boston_mlp_adam_mse",
+      "boston_mlp_sgd_mae",
+      "boston_mlp_sgd_mse",
+      "boston_rf_mae",
+      "boston_rf_mse",
+      "boston_svm_mae",
+      "boston_svm_mse",
+      "breast_ada_acc",
+      "breast_ada_nll",
+      "breast_dt_acc",
+      "breast_dt_nll",
+      "breast_knn_acc",
+      "breast_knn_nll",
+      "breast_lasso_acc",
+      "breast_lasso_nll",
+      "breast_linear_acc",
+      "breast_linear_nll",
+      "breast_mlp_adam_acc",
+      "breast_mlp_adam_nll",
+      "breast_mlp_sgd_acc",
+      "breast_mlp_sgd_nll",
+      "breast_rf_acc",
+      "breast_rf_nll",
+      "breast_svm_acc",
+      "breast_svm_nll",
+      "diabetes_ada_mae",
+      "diabetes_ada_mse",
+      "diabetes_dt_mae",
+      "diabetes_dt_mse",
+      "diabetes_knn_mae",
+      "diabetes_knn_mse",
+      "diabetes_lasso_mae",
+      "diabetes_lasso_mse",
+      "diabetes_linear_mae",
+      "diabetes_linear_mse",
+      "diabetes_mlp_adam_mae",
+      "diabetes_mlp_adam_mse",
+      "diabetes_mlp_sgd_mae",
+      "diabetes_mlp_sgd_mse",
+      "diabetes_rf_mae",
+      "diabetes_rf_mse",
+      "diabetes_svm_mae",
+      "diabetes_svm_mse",
+      "digits_ada_acc",
+      "digits_ada_nll",
+      "digits_dt_acc",
+      "digits_dt_nll",
+      "digits_knn_acc",
+      "digits_knn_nll",
+      "digits_lasso_acc",
+      "digits_lasso_nll",
+      "digits_linear_acc",
+      "digits_linear_nll",
+      "digits_mlp_adam_acc",
+      "digits_mlp_adam_nll",
+      "digits_mlp_sgd_acc",
+      "digits_mlp_sgd_nll",
+      "digits_rf_acc",
+      "digits_rf_nll",
+      "digits_svm_acc",
+      "digits_svm_nll",
+      "iris_ada_acc",
+      "iris_ada_nll",
+      "iris_dt_acc",
+      "iris_dt_nll",
+      "iris_knn_acc",
+      "iris_knn_nll",
+      "iris_lasso_acc",
+      "iris_lasso_nll",
+      "iris_linear_acc",
+      "iris_linear_nll",
+      "iris_mlp_adam_acc",
+      "iris_mlp_adam_nll",
+      "iris_mlp_sgd_acc",
+      "iris_mlp_sgd_nll",
+      "iris_rf_acc",
+      "iris_rf_nll",
+      "iris_svm_acc",
+      "iris_svm_nll",
+      "wine_ada_acc",
+      "wine_ada_nll",
+      "wine_dt_acc",
+      "wine_dt_nll",
+      "wine_knn_acc",
+      "wine_knn_nll",
+      "wine_lasso_acc",
+      "wine_lasso_nll",
+      "wine_linear_acc",
+      "wine_linear_nll",
+      "wine_mlp_adam_acc",
+      "wine_mlp_adam_nll",
+      "wine_mlp_sgd_acc",
+      "wine_mlp_sgd_nll",
+      "wine_rf_acc",
+      "wine_rf_nll",
+      "wine_svm_acc",
+      "wine_svm_nll"
+    ]
+  },
+  "format": "tidyhebo-paper-parquet-v1",
+  "initial_coordinates": "per_evaluation",
+  "niah": {
+    "actual_seeds": [
+      415968276,
+      423734972,
+      429389014,
+      669991378,
+      670094950,
+      787846414,
+      996406378,
+      1201263687,
+      1273642419,
+      1608637542,
+      1914837113,
+      1935803228
+    ],
+    "by_q": {
+      "1": 144
+    },
+    "completed": 144,
+    "planned_seeds": null,
+    "reference_runs": 144,
+    "runs_with_initial_x": 144,
+    "skipped": {},
+    "source": "results\\NIAH-005",
+    "tasks": [
+      "poisson_ratio",
+      "thermoelectric"
+    ]
+  },
+  "olympus": {
+    "actual_seeds": [
+      3344769,
+      88409749,
+      242285876,
+      249467210,
+      415968276,
+      423734972,
+      429389014,
+      434285667,
+      613608295,
+      648061058,
+      669991378,
+      670094950,
+      780932287,
+      787846414,
+      893664919,
+      911989541,
+      953477463,
+      996406378,
+      1201263687,
+      1273642419,
+      1427830251,
+      1433267572,
+      1572714583,
+      1608637542,
+      1883569565,
+      1914837113,
+      1935803228,
+      1972458954,
+      2018247425,
+      2114032571
+    ],
+    "by_q": {
+      "1": 3420,
+      "16": 3420,
+      "2": 3420,
+      "4": 3420,
+      "8": 3420
+    },
+    "completed": 17100,
+    "planned_seeds": null,
+    "reference_runs": 17100,
+    "runs_with_initial_x": 17100,
+    "skipped": {},
+    "source": "results\\olympus_baselines_038",
+    "task_catalog": {
+      "agnp": {
+        "less_is_better": false,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 42.80981595,
+            "low": 4.53,
+            "name": "q_agno3",
+            "type": "continuous"
+          },
+          {
+            "high": 40.00101474,
+            "low": 9.999518096000001,
+            "name": "q_pva",
+            "type": "continuous"
+          },
+          {
+            "high": 30.5,
+            "low": 0.5,
+            "name": "q_tsc",
+            "type": "continuous"
+          },
+          {
+            "high": 19.5,
+            "low": 0.498851653,
+            "name": "q_seed",
+            "type": "continuous"
+          },
+          {
+            "high": 983.0,
+            "low": 200.0,
+            "name": "q_tot",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "agnp",
+        "y_p_star": 1.392872536722466,
+        "y_p_w": 0.055425453541618465
+      },
+      "alkox": {
+        "less_is_better": false,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 1.0,
+            "low": 0.05,
+            "name": "catalase",
+            "type": "continuous"
+          },
+          {
+            "high": 10.0,
+            "low": 0.5,
+            "name": "peroxidase",
+            "type": "continuous"
+          },
+          {
+            "high": 8.0,
+            "low": 2.0,
+            "name": "alcohol_oxidase",
+            "type": "continuous"
+          },
+          {
+            "high": 8.0,
+            "low": 6.0,
+            "name": "ph",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "alkox",
+        "y_p_star": 137.7049049899668,
+        "y_p_w": -7.988519390031499
+      },
+      "autoam": {
+        "less_is_better": false,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 5.0,
+            "low": 0.0,
+            "name": "prime_delay",
+            "type": "continuous"
+          },
+          {
+            "high": 10.0,
+            "low": 0.1,
+            "name": "print_speed",
+            "type": "continuous"
+          },
+          {
+            "high": 1.0,
+            "low": -1.0,
+            "name": "x_offset_correction",
+            "type": "continuous"
+          },
+          {
+            "high": 1.0,
+            "low": -1.0,
+            "name": "y_offset_correction",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "autoam",
+        "y_p_star": 0.9589381259897858,
+        "y_p_w": 0.0
+      },
+      "benzylation": {
+        "less_is_better": true,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 0.4,
+            "low": 0.2,
+            "name": "flow_rate",
+            "type": "continuous"
+          },
+          {
+            "high": 5.0,
+            "low": 1.0,
+            "name": "ratio",
+            "type": "continuous"
+          },
+          {
+            "high": 1.0,
+            "low": 0.5,
+            "name": "solvent",
+            "type": "continuous"
+          },
+          {
+            "high": 150.0,
+            "low": 110.0,
+            "name": "temperature",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "benzylation",
+        "y_p_star": 2.2661911135089805,
+        "y_p_w": 17.694440791524688
+      },
+      "colors_bob": {
+        "less_is_better": true,
+        "on_simplex": true,
+        "params": [
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "red_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "orange_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "yellow_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "blue_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "green_aux",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "colors_bob",
+        "y_p_star": 0.060390979051589966,
+        "y_p_w": 0.5460909008979797
+      },
+      "colors_n9": {
+        "less_is_better": true,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 1.0,
+            "low": 0.0,
+            "name": "red",
+            "type": "continuous"
+          },
+          {
+            "high": 1.0,
+            "low": 0.0,
+            "name": "green",
+            "type": "continuous"
+          },
+          {
+            "high": 1.0,
+            "low": 0.0,
+            "name": "blue",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "colors_n9",
+        "y_p_star": 0.05937561114623373,
+        "y_p_w": 0.6417334914721279
+      },
+      "crossed_barrel": {
+        "less_is_better": false,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 12.0,
+            "low": 6.0,
+            "name": "n",
+            "type": "continuous"
+          },
+          {
+            "high": 200.0,
+            "low": 0.0,
+            "name": "theta",
+            "type": "continuous"
+          },
+          {
+            "high": 2.5,
+            "low": 1.5,
+            "name": "r",
+            "type": "continuous"
+          },
+          {
+            "high": 1.4,
+            "low": 0.7,
+            "name": "t",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "barrel",
+        "y_p_star": 54.780801294152354,
+        "y_p_w": 0.0
+      },
+      "fullerenes": {
+        "less_is_better": false,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 31.0,
+            "low": 3.0,
+            "name": "reaction_time",
+            "type": "continuous"
+          },
+          {
+            "high": 6.0,
+            "low": 1.5,
+            "name": "sultine",
+            "type": "continuous"
+          },
+          {
+            "high": 150.0,
+            "low": 100.0,
+            "name": "temperature",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "fullerenes",
+        "y_p_star": 0.9590694802897713,
+        "y_p_w": 0.346106073207598
+      },
+      "hplc": {
+        "less_is_better": false,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 0.08,
+            "low": 0.0,
+            "name": "sample_loop",
+            "type": "continuous"
+          },
+          {
+            "high": 0.06,
+            "low": 0.0,
+            "name": "additional_volume",
+            "type": "continuous"
+          },
+          {
+            "high": 0.9,
+            "low": 0.1,
+            "name": "tubing_volume",
+            "type": "continuous"
+          },
+          {
+            "high": 2.5,
+            "low": 0.5,
+            "name": "sample_flow",
+            "type": "continuous"
+          },
+          {
+            "high": 150,
+            "low": 80.0,
+            "name": "push_speed",
+            "type": "continuous"
+          },
+          {
+            "high": 10.0,
+            "low": 0.5,
+            "name": "wait_time",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "hplc",
+        "y_p_star": 2883.158856008885,
+        "y_p_w": 0.0
+      },
+      "oer_plate_3496": {
+        "less_is_better": true,
+        "on_simplex": true,
+        "params": [
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "ni_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "fe_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "co_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mn_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "ce_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "la_load_aux",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "oer_plate_3496",
+        "y_p_star": 0.3367150815743247,
+        "y_p_w": 0.6453159194452321
+      },
+      "oer_plate_3851": {
+        "less_is_better": true,
+        "on_simplex": true,
+        "params": [
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "ni_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "fe_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "co_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "ta_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mn_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "cu_load_aux",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "oer_plate_3851",
+        "y_p_star": 0.3288009786085054,
+        "y_p_w": 0.534109967162347
+      },
+      "oer_plate_3860": {
+        "less_is_better": true,
+        "on_simplex": true,
+        "params": [
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "sn_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "fe_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "co_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "ta_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mn_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "cu_load_aux",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "oer_plate_3860",
+        "y_p_star": 0.3811638166240594,
+        "y_p_w": 0.6680880599509655
+      },
+      "oer_plate_4098": {
+        "less_is_better": true,
+        "on_simplex": true,
+        "params": [
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "sn_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "sb_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "co_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "ca_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "ni_load_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mn_load_aux",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "oer_plate_4098",
+        "y_p_star": 0.2742433019239248,
+        "y_p_w": 0.6290591995681086
+      },
+      "p3ht": {
+        "less_is_better": false,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 96.27,
+            "low": 15.0,
+            "name": "p3ht_content",
+            "type": "continuous"
+          },
+          {
+            "high": 60.0,
+            "low": 0.0,
+            "name": "d1_content",
+            "type": "continuous"
+          },
+          {
+            "high": 70.0,
+            "low": 0.0,
+            "name": "d2_content",
+            "type": "continuous"
+          },
+          {
+            "high": 85.0,
+            "low": 0.0,
+            "name": "d6_content",
+            "type": "continuous"
+          },
+          {
+            "high": 75.0,
+            "low": 0.0,
+            "name": "d8_content",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "p3ht",
+        "y_p_star": 4166.01297468314,
+        "y_p_w": 0.0
+      },
+      "photo_pce10": {
+        "less_is_better": true,
+        "on_simplex": true,
+        "params": [
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mat_1_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mat_2_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mat_3_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mat_4_aux",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "photo_pce10",
+        "y_p_star": 0.0,
+        "y_p_w": 0.7903315609127266
+      },
+      "photo_wf3": {
+        "less_is_better": true,
+        "on_simplex": true,
+        "params": [
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mat_1_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mat_2_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mat_3_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "mat_4_aux",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "photo_wf3",
+        "y_p_star": 0.0,
+        "y_p_w": 0.6429202878879375
+      },
+      "snar": {
+        "less_is_better": true,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 2.0,
+            "low": 0.5,
+            "name": "residence_time",
+            "type": "continuous"
+          },
+          {
+            "high": 5.0,
+            "low": 1.0,
+            "name": "ratio",
+            "type": "continuous"
+          },
+          {
+            "high": 0.5,
+            "low": 0.1,
+            "name": "concentration",
+            "type": "continuous"
+          },
+          {
+            "high": 140.0,
+            "low": 60.0,
+            "name": "temperature",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "snar",
+        "y_p_star": 0.24122212996368542,
+        "y_p_w": 4.445027590118409
+      },
+      "suzuki": {
+        "less_is_better": false,
+        "on_simplex": false,
+        "params": [
+          {
+            "high": 90.0,
+            "low": 75.0,
+            "name": "temperature",
+            "type": "continuous"
+          },
+          {
+            "high": 5.0,
+            "low": 0.5,
+            "name": "pd_mol",
+            "type": "continuous"
+          },
+          {
+            "high": 1.8,
+            "low": 1.0,
+            "name": "arbpin",
+            "type": "continuous"
+          },
+          {
+            "high": 3.0,
+            "low": 1.5,
+            "name": "k3po4",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "suzuki",
+        "y_p_star": 107.82501293529164,
+        "y_p_w": 2.7537324663703187
+      },
+      "thin_film": {
+        "less_is_better": true,
+        "on_simplex": true,
+        "params": [
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "CsPbI_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "FAPbI_aux",
+            "type": "continuous"
+          },
+          {
+            "high": 2.0,
+            "low": -2.0,
+            "name": "MAPbI_aux",
+            "type": "continuous"
+          }
+        ],
+        "task_name": "thin_films",
+        "y_p_star": 66302.03713692715,
+        "y_p_w": 1654719.3082870904
+      }
+    },
+    "tasks": [
+      "agnp",
+      "alkox",
+      "autoam",
+      "benzylation",
+      "colors_bob",
+      "colors_n9",
+      "crossed_barrel",
+      "fullerenes",
+      "hplc",
+      "oer_plate_3496",
+      "oer_plate_3851",
+      "oer_plate_3860",
+      "oer_plate_4098",
+      "p3ht",
+      "photo_pce10",
+      "photo_wf3",
+      "snar",
+      "suzuki",
+      "thin_film"
+    ]
+  },
+  "sha256": {
+    "data/historical/bayesmark.parquet": "846ab5dc87edeca5e8de7ef6a7657df31652a511767ad5cea3ef6fd86e65b12b",
+    "data/historical/niah.parquet": "83928deadf0101d26432725fd07844c8bd20c2f2710124ab6f4c184a299bab48",
+    "data/historical/olympus.parquet": "4ee2415b4bd7050bbbe4c2cff77d6074ef2184dd9be2abd68222226b5c497fa2"
+  }
+}

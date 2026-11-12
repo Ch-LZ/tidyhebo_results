@@ -1,66 +1,112 @@
-# tidyHEBO benchmark results
+# tidyHEBO paper results
 
-This repository contains the archived optimization traces and the small amount of analysis code needed to reproduce the figures and tables reported for tidyHEBO. The archived objective-value matrices are kept unchanged; the manuscript-facing notebooks rebuild the analyses directly from those files.
+Reproduce the Olympus, NIAH and Bayesmark experiments reported in the tidyHEBO
+paper. The optimizer library is available at
+[Ch-LZ/tidyhebo](https://github.com/Ch-LZ/tidyhebo).
 
-## Environments
+## Rerun the experiments
 
-Three Conda environments are provided in `venvs/`:
+Run these commands from the repository root in a terminal with Git, Python
+3.10 or newer, and Mamba (for example, from Miniforge).
 
-```bash
-conda env create -f venvs/tidyhebo.yaml
-conda env create -f venvs/hebo.yaml
-conda env create -f venvs/o11.yaml
+### 1. Set up the environments
+
+```sh
+python -m pip install PyYAML
+python run_experiments.py setup all
 ```
 
-`tidyhebo` is used for tidyHEBO, LogEI, Optuna, Random, and the analysis notebooks. `hebo` is used for the original HEBO implementation. `o11` is the legacy Python 3.7/TensorFlow environment used by the Olympus emulators; the historical name is retained because assembling the legacy emulator stack otherwise requires several old dependencies.
+Setup creates isolated CPU environments using the versions in
+[`environments/`](environments/). It fetches tidyHEBO from the GitHub release tag
+`v0.1.0` and checks it against the commit in
+[`environments/sources.yaml`](environments/sources.yaml). It also fetches the
+pinned Olympus emulators, prepares the NIAH oracles from the pinned ZoMBI
+assets, and sets up the legacy Bayesmark 0.0.8 oracle.
 
-The `o11` export contains the runtime dependencies but not the editable Olympus source checkout. Install Olympus from source into that environment after creating it:
+### 2. Run the smoke tests
 
-```bash
-git clone https://github.com/the-matter-lab/olympus.git ../olympus
-conda run -n o11 python -m pip install --no-deps -e ../olympus
-conda run -n o11 python -c "from olympus import Emulator; print('Olympus import OK')"
+```sh
+mamba run -p environments/optimizers/scientific python run_experiments.py smoke all
 ```
 
-The YAML files are exported environments and are intended for Linux. `mamba env create -f ...` can be used instead of `conda env create -f ...` if Mamba is available; the benchmark launcher itself invokes `conda run`, so `conda` must remain available on `PATH`.
+The smoke tests use the real oracles and all six methods with one repeat and
+one optimization batch after initialization. They cover two tasks per
+benchmark and all five Olympus batch sizes. Use `olympus`, `niah` or
+`bayesmark` in place of `all` to test one experiment. The smoke tests write
+to `results/smoke/` and check completion, finite objectives and matching
+initial points across methods.
 
-## Reproducing the reported results
+### 3. Run the full paper campaigns
 
-The notebooks contain the exact commands for regenerating raw optimization traces and rebuild the manuscript-facing summaries from the archived results:
-
-1. **Ackley and Hartmann:** [`01_synthetic_reproducibility.ipynb`](01_synthetic_reproducibility.ipynb)
-2. **Olympus, sequential optimization:** [`02_olympus_sequential_reproducibility.ipynb`](02_olympus_sequential_reproducibility.ipynb)
-3. **Olympus, adaptive batching:** [`03_olympus_adaptive_batching_reproducibility.ipynb`](03_olympus_adaptive_batching_reproducibility.ipynb)
-4. An additional Needle-in-a-Haystack analysis is documented in [`04_needle_in_a_haystack/ZoMBI_reproducibility.ipynb`](04_needle_in_a_haystack/ZoMBI_reproducibility.ipynb).
-
-For a quick check without rerunning the optimizers, open the notebooks from the repository root in the `tidyhebo` environment and execute all cells. The archived matrices contain 30 runs × 100 evaluations for every manuscript benchmark setting.
-
-For `bayesmark` results reproduction see `bayesmark_reproducibility/README.md`
-
-## Repository structure
-
-- `01_synthetic_functions/` — archived Ackley and Hartmann traces.
-- `02_olympus/` — archived sequential Olympus traces.
-- `03_olympus_adaptive_batching/` — archived adaptive-batching traces and per-run batch logs.
-- `04_needle_in_a_haystack/` — ZoMBI/Needle-in-a-Haystack analysis.
-- `functions_run/` — synthetic benchmark runners.
-- `olympus_run/` — Olympus emulator/optimizer orchestration, task configs, adaptors, and tests.
-- `reproducibility/metrics.py` — **single source of truth** for median nAUC, IQR nAUC, and CVaR nAUC.
-- `reproducibility/plotting.py` and `reproducibility/adaptive_batching.py` — shared plotting/analysis helpers used by the notebooks.
-- `venvs/` — Conda environment specifications.
-- `reproducibility/update_olympus_extrema.py` is a maintenance utility for recomputing task extrema; it is not required for reproducing the archived manuscript results.
-- `bayesmark_reproducibility` — source code and instructions on how to reproduce bayesmark results
-
-## Tests
-
-The Olympus code has environment-specific tests. The runner detects either Mamba or Conda and executes the appropriate marker set in each environment:
-
-```bash
-python olympus_run/run_all_tests.py -q
+```sh
+python run_experiments.py run olympus
+python run_experiments.py run niah
+python run_experiments.py run bayesmark
 ```
 
-The lightweight analysis helpers can also be checked directly with:
+Run the commands one at a time. Each experiment uses six methods and derives
+its repeat seeds from master seed `42`. The budgets below include initialization.
 
-```bash
-python -m pytest -q reproducibility/tests
+| Experiment | Configuration | Tasks | Repeats | Batch sizes | Initial points | Evaluations per run |
+|---|---|---:|---:|---|---:|---:|
+| Olympus | [OLY-002.json](experiments/OLY-002.json) | 19 | 30 | 1, 2, 4, 8, 16 | 4 | 100 |
+| NIAH | [NIAH-005.json](experiments/NIAH-005.json) | 2 | 12 | 1 | 4 | 100 |
+| Bayesmark | [BAYESMARK-Q8-FULL108.json](experiments/BAYESMARK-Q8-FULL108.json) | 108 | 15 | 8 | 8 | 128 |
+
+The NIAH campaign reproduces the paper's sequential runs on Poisson ratio and
+thermoelectric. The ZoMBI comparison curves are archived with the paper data.
+
+Each config sets its campaign directory under `results/`. Inside that
+directory, `results/trajectories/` holds the per-run JSON trajectories and
+`results/summary.json` records run status. Use
+`python run_experiments.py status olympus` to inspect progress and
+`python run_experiments.py resume olympus` to continue an interrupted run.
+Replace `olympus` with `niah` or `bayesmark` as needed. Keep the same source
+and environment versions when resuming from a native checkpoint.
+
+## Rebuild the paper figures and metrics
+
+The commands below use the 26,964 archived Parquet trajectories and seeds in
+[`data/historical/`](data/historical/). You can run them in a separate Python
+environment without setting up the benchmark oracles.
+
+```sh
+python -m pip install -e ".[analysis]"
+python run_experiments.py check all
+python run_experiments.py figures all
 ```
+
+The exact analysis environment is defined in
+[`environments/analysis.yaml`](environments/analysis.yaml). `check all`
+validates the archive hashes, run coverage, seeds, budgets and shared initial
+designs. `figures all` writes PNG, PDF, SVG and derived tables under `figures/`.
+Use `figures olympus`, `figures niah` or `figures bayesmark` for one group.
+
+| Paper figure | Recipe or notebook with saved output |
+|---|---|
+| Fig. 3 · Olympus sequential | [03_olympus_sequential.ipynb](notebooks/03_olympus_sequential.ipynb) |
+| Fig. 4 · Olympus batch | [04_olympus_batch.ipynb](notebooks/04_olympus_batch.ipynb) |
+| Fig. 5 · NIAH | [05_niah.ipynb](notebooks/05_niah.ipynb) |
+| Fig. 6 · Bayesmark | [06_bayesmark.ipynb](notebooks/06_bayesmark.ipynb) |
+| Fig. S2 · Olympus per-task comparisons | `python run_experiments.py figures olympus` |
+
+The workflow diagram and illustrative artwork in the manuscript have separate
+sources. To restore the compact history into an older source-only checkout, run
+`python run_experiments.py import-data path/to/tidyhebo_paper_history.zip`.
+
+Use `python run_experiments.py metrics olympus` or
+`python run_experiments.py metrics niah` to write tables from the archived
+trajectories under `analysis/`. The Bayesmark figure uses the archived
+repeat-score table. To recompute those scores from the archived losses after
+setup, run:
+
+```sh
+mamba run -p environments/optimizers/scientific python run_experiments.py metrics bayesmark
+```
+
+The shared metric definitions are in
+[`src/bo_benchmark/analysis/metrics.py`](src/bo_benchmark/analysis/metrics.py).
+
+## License
+
+See [LICENSE.md](LICENSE.md). Third-party sources retain their own licenses.

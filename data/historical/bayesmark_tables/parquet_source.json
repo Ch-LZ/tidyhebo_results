@@ -1,0 +1,5 @@
+{
+  "analysis": "Bayesmark 0.0.8; 108 tasks, 15 repeats, pooled random baseline",
+  "parquet_sha256": "846ab5dc87edeca5e8de7ef6a7657df31652a511767ad5cea3ef6fd86e65b12b",
+  "repeat_table_sha256": "8c1ec7cc9199ba1909e8eed90d4cbe135982a62b61725f3ff4abd5572984f8a5"
+}

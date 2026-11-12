@@ -1,0 +1,689 @@
+{
+  "oer_plate_3496": {
+    "task_name": "oer_plate_3496",
+    "less_is_better": true,
+    "on_simplex": true,
+    "params": [
+      {
+        "name": "ni_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "fe_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "co_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mn_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "ce_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "la_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      }
+    ],
+    "y_p_star": 0.3367150815743247,
+    "y_p_w": 0.6453159194452321
+  },
+  "thin_film": {
+    "task_name": "thin_films",
+    "less_is_better": true,
+    "on_simplex": true,
+    "params": [
+      {
+        "name": "CsPbI_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "FAPbI_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "MAPbI_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      }
+    ],
+    "y_p_star": 66302.03713692715,
+    "y_p_w": 1654719.3082870904
+  },
+  "autoam": {
+    "task_name": "autoam",
+    "less_is_better": false,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "prime_delay",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 5.0
+      },
+      {
+        "name": "print_speed",
+        "type": "continuous",
+        "low": 0.1,
+        "high": 10.0
+      },
+      {
+        "name": "x_offset_correction",
+        "type": "continuous",
+        "low": -1.0,
+        "high": 1.0
+      },
+      {
+        "name": "y_offset_correction",
+        "type": "continuous",
+        "low": -1.0,
+        "high": 1.0
+      }
+    ],
+    "y_p_star": 0.9589381259897858,
+    "y_p_w": 0.0
+  },
+  "oer_plate_3851": {
+    "task_name": "oer_plate_3851",
+    "less_is_better": true,
+    "on_simplex": true,
+    "params": [
+      {
+        "name": "ni_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "fe_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "co_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "ta_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mn_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "cu_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      }
+    ],
+    "y_p_star": 0.3288009786085054,
+    "y_p_w": 0.534109967162347
+  },
+  "p3ht": {
+    "task_name": "p3ht",
+    "less_is_better": false,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "p3ht_content",
+        "type": "continuous",
+        "low": 15.0,
+        "high": 96.27
+      },
+      {
+        "name": "d1_content",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 60.0
+      },
+      {
+        "name": "d2_content",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 70.0
+      },
+      {
+        "name": "d6_content",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 85.0
+      },
+      {
+        "name": "d8_content",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 75.0
+      }
+    ],
+    "y_p_star": 4166.01297468314,
+    "y_p_w": 0.0
+  },
+  "oer_plate_3860": {
+    "task_name": "oer_plate_3860",
+    "less_is_better": true,
+    "on_simplex": true,
+    "params": [
+      {
+        "name": "sn_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "fe_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "co_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "ta_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mn_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "cu_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      }
+    ],
+    "y_p_star": 0.3811638166240594,
+    "y_p_w": 0.6680880599509655
+  },
+  "oer_plate_4098": {
+    "task_name": "oer_plate_4098",
+    "less_is_better": true,
+    "on_simplex": true,
+    "params": [
+      {
+        "name": "sn_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "sb_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "co_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "ca_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "ni_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mn_load_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      }
+    ],
+    "y_p_star": 0.2742433019239248,
+    "y_p_w": 0.6290591995681086
+  },
+  "crossed_barrel": {
+    "task_name": "barrel",
+    "less_is_better": false,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "n",
+        "type": "continuous",
+        "low": 6.0,
+        "high": 12.0
+      },
+      {
+        "name": "theta",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 200.0
+      },
+      {
+        "name": "r",
+        "type": "continuous",
+        "low": 1.5,
+        "high": 2.5
+      },
+      {
+        "name": "t",
+        "type": "continuous",
+        "low": 0.7,
+        "high": 1.4
+      }
+    ],
+    "y_p_star": 54.780801294152354,
+    "y_p_w": 0.0
+  },
+  "agnp": {
+    "task_name": "agnp",
+    "less_is_better": false,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "q_agno3",
+        "type": "continuous",
+        "low": 4.53,
+        "high": 42.80981595
+      },
+      {
+        "name": "q_pva",
+        "type": "continuous",
+        "low": 9.999518096000001,
+        "high": 40.00101474
+      },
+      {
+        "name": "q_tsc",
+        "type": "continuous",
+        "low": 0.5,
+        "high": 30.5
+      },
+      {
+        "name": "q_seed",
+        "type": "continuous",
+        "low": 0.498851653,
+        "high": 19.5
+      },
+      {
+        "name": "q_tot",
+        "type": "continuous",
+        "low": 200.0,
+        "high": 983.0
+      }
+    ],
+    "y_p_star": 1.392872536722466,
+    "y_p_w": 0.055425453541618465
+  },
+  "benzylation": {
+    "task_name": "benzylation",
+    "less_is_better": true,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "flow_rate",
+        "type": "continuous",
+        "low": 0.2,
+        "high": 0.4
+      },
+      {
+        "name": "ratio",
+        "type": "continuous",
+        "low": 1.0,
+        "high": 5.0
+      },
+      {
+        "name": "solvent",
+        "type": "continuous",
+        "low": 0.5,
+        "high": 1.0
+      },
+      {
+        "name": "temperature",
+        "type": "continuous",
+        "low": 110.0,
+        "high": 150.0
+      }
+    ],
+    "y_p_star": 2.2661911135089805,
+    "y_p_w": 17.694440791524688
+  },
+  "colors_bob": {
+    "task_name": "colors_bob",
+    "less_is_better": true,
+    "on_simplex": true,
+    "params": [
+      {
+        "name": "red_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "orange_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "yellow_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "blue_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "green_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      }
+    ],
+    "y_p_star": 0.060390979051589966,
+    "y_p_w": 0.5460909008979797
+  },
+  "hplc": {
+    "task_name": "hplc",
+    "less_is_better": false,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "sample_loop",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 0.08
+      },
+      {
+        "name": "additional_volume",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 0.06
+      },
+      {
+        "name": "tubing_volume",
+        "type": "continuous",
+        "low": 0.1,
+        "high": 0.9
+      },
+      {
+        "name": "sample_flow",
+        "type": "continuous",
+        "low": 0.5,
+        "high": 2.5
+      },
+      {
+        "name": "push_speed",
+        "type": "continuous",
+        "low": 80.0,
+        "high": 150
+      },
+      {
+        "name": "wait_time",
+        "type": "continuous",
+        "low": 0.5,
+        "high": 10.0
+      }
+    ],
+    "y_p_star": 2883.158856008885,
+    "y_p_w": 0.0
+  },
+  "photo_wf3": {
+    "task_name": "photo_wf3",
+    "less_is_better": true,
+    "on_simplex": true,
+    "params": [
+      {
+        "name": "mat_1_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mat_2_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mat_3_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mat_4_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      }
+    ],
+    "y_p_star": 0.0,
+    "y_p_w": 0.6429202878879375
+  },
+  "snar": {
+    "task_name": "snar",
+    "less_is_better": true,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "residence_time",
+        "type": "continuous",
+        "low": 0.5,
+        "high": 2.0
+      },
+      {
+        "name": "ratio",
+        "type": "continuous",
+        "low": 1.0,
+        "high": 5.0
+      },
+      {
+        "name": "concentration",
+        "type": "continuous",
+        "low": 0.1,
+        "high": 0.5
+      },
+      {
+        "name": "temperature",
+        "type": "continuous",
+        "low": 60.0,
+        "high": 140.0
+      }
+    ],
+    "y_p_star": 0.24122212996368542,
+    "y_p_w": 4.445027590118409
+  },
+  "fullerenes": {
+    "task_name": "fullerenes",
+    "less_is_better": false,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "reaction_time",
+        "type": "continuous",
+        "low": 3.0,
+        "high": 31.0
+      },
+      {
+        "name": "sultine",
+        "type": "continuous",
+        "low": 1.5,
+        "high": 6.0
+      },
+      {
+        "name": "temperature",
+        "type": "continuous",
+        "low": 100.0,
+        "high": 150.0
+      }
+    ],
+    "y_p_star": 0.9590694802897713,
+    "y_p_w": 0.346106073207598
+  },
+  "alkox": {
+    "task_name": "alkox",
+    "less_is_better": false,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "catalase",
+        "type": "continuous",
+        "low": 0.05,
+        "high": 1.0
+      },
+      {
+        "name": "peroxidase",
+        "type": "continuous",
+        "low": 0.5,
+        "high": 10.0
+      },
+      {
+        "name": "alcohol_oxidase",
+        "type": "continuous",
+        "low": 2.0,
+        "high": 8.0
+      },
+      {
+        "name": "ph",
+        "type": "continuous",
+        "low": 6.0,
+        "high": 8.0
+      }
+    ],
+    "y_p_star": 137.7049049899668,
+    "y_p_w": -7.988519390031499
+  },
+  "colors_n9": {
+    "task_name": "colors_n9",
+    "less_is_better": true,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "red",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 1.0
+      },
+      {
+        "name": "green",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 1.0
+      },
+      {
+        "name": "blue",
+        "type": "continuous",
+        "low": 0.0,
+        "high": 1.0
+      }
+    ],
+    "y_p_star": 0.05937561114623373,
+    "y_p_w": 0.6417334914721279
+  },
+  "suzuki": {
+    "task_name": "suzuki",
+    "less_is_better": false,
+    "on_simplex": false,
+    "params": [
+      {
+        "name": "temperature",
+        "type": "continuous",
+        "low": 75.0,
+        "high": 90.0
+      },
+      {
+        "name": "pd_mol",
+        "type": "continuous",
+        "low": 0.5,
+        "high": 5.0
+      },
+      {
+        "name": "arbpin",
+        "type": "continuous",
+        "low": 1.0,
+        "high": 1.8
+      },
+      {
+        "name": "k3po4",
+        "type": "continuous",
+        "low": 1.5,
+        "high": 3.0
+      }
+    ],
+    "y_p_star": 107.82501293529164,
+    "y_p_w": 2.7537324663703187
+  },
+  "photo_pce10": {
+    "task_name": "photo_pce10",
+    "less_is_better": true,
+    "on_simplex": true,
+    "params": [
+      {
+        "name": "mat_1_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mat_2_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mat_3_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      },
+      {
+        "name": "mat_4_aux",
+        "type": "continuous",
+        "low": -2.0,
+        "high": 2.0
+      }
+    ],
+    "y_p_star": 0.0,
+    "y_p_w": 0.7903315609127266
+  }
+}

@@ -1,0 +1,16 @@
+name: qmace-lab
+channels:
+- conda-forge
+dependencies:
+- python=3.11
+- numpy==2.2.6
+- pandas==2.2.3
+- scipy==1.15.3
+- torch==2.7.1
+- botorch==0.14.0
+- gpytorch==1.14
+- pymoo==0.6.1.5
+- PyYAML==6.0.3
+- threadpoolctl>=3.1
+- psutil>=5.9
+- tqdm>=4.60

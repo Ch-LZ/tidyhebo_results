@@ -1,23 +1,16 @@
-__pycache__/
-__dev_/
-.vscode
-*.code-workspace
-*.pyc
-*.pytest_cache
-*.egg-info
-*.zip
-*.tar.gz
-TODO.md
-sandbox
+/results/
+/analysis/
+/figures/
+/vendor/
+/data/niah/raw/
+/data/niah/NIAH005/prepared/*.npz
 
-# bayesmark
-results/
-logs/
-.state/
-smoke_results/
-smoke_logs/
-.smoke_state/
-.runner.json
-.ipynb_checkpoints/
+/environments/optimizers/
+/environments/benchmarks/
+/environments/local.yaml
+/environments/ready.yaml
+/environments/baselines.ready.yaml
+
 __pycache__/
-*.py[cod]
+/src/*.egg-info/
+/notebooks/.ipynb_checkpoints/

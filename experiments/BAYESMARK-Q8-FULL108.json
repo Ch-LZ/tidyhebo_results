@@ -1,0 +1,179 @@
+{
+  "master_seed": 42,
+  "startup": "legacy_qmace",
+  "threads": 1,
+  "environment_profiles": "../environments/local.yaml",
+  "environments": {
+    "model": {
+      "profile": "model",
+      "sources": [
+        "../vendor/tidyhebo"
+      ],
+      "threads": 1,
+      "cpu_only": true,
+      "startup_attempts": 3
+    },
+    "hebo": {
+      "profile": "baselines",
+      "env": {
+        "BO_BASELINE": "hebo"
+      },
+      "threads": 1,
+      "cpu_only": true,
+      "startup_attempts": 3
+    },
+    "optuna": {
+      "profile": "baselines",
+      "env": {
+        "BO_BASELINE": "optuna"
+      },
+      "threads": 1,
+      "cpu_only": true,
+      "startup_attempts": 3
+    },
+    "random": {
+      "profile": "baselines",
+      "env": {
+        "BO_BASELINE": "random"
+      },
+      "threads": 1,
+      "cpu_only": true,
+      "startup_attempts": 3
+    }
+  },
+  "models": [
+    {
+      "name": "hebo",
+      "kind": "tidyhebo",
+      "environment": "hebo",
+      "options": {
+        "n_init": 8,
+        "startup": "legacy_qmace"
+      }
+    },
+    {
+      "name": "optuna",
+      "kind": "tidyhebo",
+      "environment": "optuna",
+      "options": {
+        "n_init": 8,
+        "startup": "legacy_qmace"
+      }
+    },
+    {
+      "name": "random",
+      "kind": "tidyhebo",
+      "environment": "random",
+      "options": {
+        "n_init": 8,
+        "startup": "legacy_qmace"
+      }
+    },
+    {
+      "name": "vanilla_gp_qlogei",
+      "kind": "tidyhebo",
+      "options": {
+        "n_init": 8,
+        "startup": "legacy_qmace",
+        "model": {
+          "_target_": "joint",
+          "kernel": "Matern52",
+          "input_warp": false,
+          "output_transform": "standardize",
+          "gate": false
+        },
+        "acquisition": {
+          "evaluation": "qmc",
+          "mc_samples": 512,
+          "quadrature_size": 128,
+          "_target_": "qLogEI"
+        },
+        "search": {
+          "_target_": "botorch",
+          "inference_device": "cpu",
+          "num_restarts": 8,
+          "raw_samples": 128,
+          "maxiter": 100,
+          "batch_limit": 4
+        }
+      }
+    },
+    {
+      "name": "yj_qlogei",
+      "kind": "tidyhebo",
+      "options": {
+        "n_init": 8,
+        "startup": "legacy_qmace",
+        "model": {
+          "_target_": "joint",
+          "kernel": "Matern52",
+          "input_warp": true,
+          "output_transform": "yeo_johnson",
+          "gate": true
+        },
+        "acquisition": {
+          "evaluation": "qmc",
+          "mc_samples": 512,
+          "quadrature_size": 128,
+          "_target_": "qLogEI"
+        },
+        "search": {
+          "_target_": "botorch",
+          "inference_device": "cpu",
+          "num_restarts": 8,
+          "raw_samples": 128,
+          "maxiter": 100,
+          "batch_limit": 4
+        }
+      }
+    },
+    {
+      "name": "qmace_retained",
+      "kind": "tidyhebo",
+      "options": {
+        "n_init": 8,
+        "startup": "legacy_qmace",
+        "model": {
+          "_target_": "joint",
+          "kernel": "Matern52",
+          "input_warp": true,
+          "output_transform": "yeo_johnson",
+          "gate": true
+        },
+        "acquisition": {
+          "evaluation": "qmc",
+          "mc_samples": 512,
+          "quadrature_size": 128
+        },
+        "search": {
+          "_target_": "layered",
+          "inference_device": "cpu",
+          "point_init": {
+            "directions": 6
+          },
+          "batch_init": {
+            "directions": 6
+          },
+          "points": {
+            "population": 48,
+            "pool_size": 96
+          },
+          "batches": {
+            "population": 48,
+            "generations": 20
+          }
+        }
+      }
+    }
+  ],
+  "benchmark": "bayesmark_full",
+  "tasks": "all",
+  "q": [
+    8
+  ],
+  "n_init": 8,
+  "n_trials": 128,
+  "target_repeats": 15,
+  "workers": 16,
+  "output_dir": "../results/bayesmark_q8_full108"
+}

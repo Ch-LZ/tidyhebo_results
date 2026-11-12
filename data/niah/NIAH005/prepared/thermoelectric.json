@@ -1,0 +1,38 @@
+{
+  "protocol": "niah-asset-v1",
+  "task": "thermoelectric",
+  "source_commit": "04a7f0fa1a1a91c2afe60f1b0c60138e21c0de99",
+  "source_file": "data/thermoelectric/zt_RF_trained.pkl",
+  "source_sha256": "f5cf78bb82e46df69aedb848e300e06379011f86406532a98f94db9cedfb0790",
+  "kind": "forest",
+  "dim": 5,
+  "trees": 500,
+  "feature_names": [
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x4"
+  ],
+  "normalization": {
+    "y_best": -209.5662761781472,
+    "y_worst": -1.3705570121631987,
+    "kind": "fixed archived-observation references, not certified global extrema"
+  },
+  "display_scale": 50.0,
+  "display_sign": -1.0,
+  "needle_levels": [
+    1.4
+  ],
+  "conversion": {
+    "reader": "passive-legacy-tree-v1",
+    "joblib": "1.5.3",
+    "source_sklearn": "1.0.2"
+  },
+  "validation": {
+    "points": 1176,
+    "reference": "sklearn native Tree traversal",
+    "max_absolute_error": 0.0
+  },
+  "asset_id": "fa4a8fb94613caec87dbec522262cc5a61e7b89dc9ef038d5971de4b8e9a8087"
+}

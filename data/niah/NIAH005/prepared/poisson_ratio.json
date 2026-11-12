@@ -1,0 +1,39 @@
+{
+  "protocol": "niah-asset-v1",
+  "task": "poisson_ratio",
+  "source_commit": "04a7f0fa1a1a91c2afe60f1b0c60138e21c0de99",
+  "source_file": "data/poisson/poisson_RF_trained.pkl",
+  "source_sha256": "b98b9a3d2a07840364232f77c5a19b48f8c1c15e2686a42c66aa0fbc49f0b132",
+  "kind": "forest",
+  "dim": 5,
+  "trees": 500,
+  "feature_names": [
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x4"
+  ],
+  "normalization": {
+    "y_best": -7.150534639650474,
+    "y_worst": 49.13633514513019,
+    "kind": "fixed archived-observation references, not certified global extrema"
+  },
+  "display_scale": 1.0,
+  "display_sign": 1.0,
+  "needle_levels": [
+    -1.2,
+    -1.7
+  ],
+  "conversion": {
+    "reader": "passive-legacy-tree-v1",
+    "joblib": "1.5.3",
+    "source_sklearn": "1.1.1"
+  },
+  "validation": {
+    "points": 1176,
+    "reference": "sklearn native Tree traversal",
+    "max_absolute_error": 0.0
+  },
+  "asset_id": "90ca26f44ba1c14b153f0887367bca6451d5c420f04e41520868e48916500380"
+}

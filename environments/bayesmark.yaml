@@ -1,0 +1,15 @@
+name: bayesmark-full
+channels:
+- conda-forge
+dependencies:
+- python=3.10
+- numpy=1.23.5
+- scipy=1.10.1
+- scikit-learn=1.1.3
+- pandas=1.5.3
+- matplotlib-base=3.7.3
+- pathvalidate=2.5
+- gitpython
+- importlib-metadata
+- xarray
+- setuptools<81

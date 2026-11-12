@@ -1,0 +1,10 @@
+model:
+  python: optimizers/scientific/python.exe
+  mamba_prefix: optimizers/scientific
+  threads: 1
+  cpu_only: true
+benchmark:
+  python: benchmarks/olympus/python.exe
+  mamba_prefix: benchmarks/olympus
+  threads: 1
+  cpu_only: true
