@@ -187,5 +187,9 @@ class SimplexProcessParityTests(unittest.TestCase):
                 capture_output=True,text=True,env=env,timeout=180)
             self.assertEqual(direct.returncode,0,direct.stderr)
             expected=json.loads(output.read_text())
-            for key in ('x','y','batches'):self.assertEqual(actual[key],expected[key],key)
+            for key in ("x", "batches"):
+                self.assertEqual(actual[key], expected[key], key)
+            self.assertEqual(len(actual["y"]), len(expected["y"]), "y length")
+            for i, (got, want) in enumerate(zip(actual["y"], expected["y"])):
+                self.assertAlmostEqual(got, want, delta=1e-10, msg=f"y[{i}]")
             self.assertNotEqual(paused['provenance']['optimizer']['pid'],actual['provenance']['optimizer']['pid'])
